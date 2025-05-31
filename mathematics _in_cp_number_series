@@ -1,0 +1,34 @@
+DÃY SỐ
+# Khái niêm
+- Dãy số là chuỗi các số thực. Ví dụ 1, 4, 2.5 , -5, 7 là 1 dãy số
+- Trên thực tế, ta bắt gặp những dãy số CÓ QUY TẮC như: 1, 3, 5, 7, 9     => các phần tử có "khoảng cách" giữa nhau là phép tổng giữa phần tử trước với hằng số 2.
+                                                        1, 1/2, 1/4, 1/8. => Các phần tử có "khoảng cách" giữa nhau là phép tích giữa phần tử trước với hằng số 1/2.
+- Vì những dãy số này có quy tắc, nên giá trị của phần tử bất kì của nó hoàn toàn được xác định bằng công thức. Có 2 loại công thức chính: hệ thức truy hồi.
+                                                                                                                                           Công thức tổng quát.
++ Hệ thức truy hồi có tính đệ quy, tức là gồm trường hợp cơ sở (phần tử thứ nhất) và trường hợp tổng quát (phần tử thứ n). 
+                   Dể tính phần tử thứ n, ta phải "truy ngược lại" phần tử thứ n - 1 (phần tử đứng trước n). Đây là lí do nó được gọi là "truy hồi".
++ Công thức tổng quát tính nhanh và hiện hơn công thức truy hồi. Nó chỉ tốn 1 phép tính duy nhất để tính phần tử thứ n mà không cần truy vết các phần tử trước.
+=> 1 dãy số có quy tắc có thể được viết ở vả 2 dạng. Nói cách khác, khi có công thức truy hồi, ta có thể viết ra công thức tổng quát và ngược lại. 
+   Tổng quát hơn, khi có ít nhất 2 phần tử ban đầu, ta hoàn toàn có thể suy ra cả hệ thức truy hồi và công thức tổng quát.
+# Cấp số cộng
+1. Khái niệm 
+-Dãy số thứ nhất ta gọi là "cấp số cộng" và hằng số được nhắc đến là "công sai". 
+2. Bài toán "tìm số thứ n trong dãy số".
+- Gọi phần tử ban đầu của cấp số cộng là a[0] và thứ n là a[n]. Ta có:
++ Phần tử thứ nhất: a[0]          = a[0] + 0d.
++ Phần tử thứ hai: a[0] + d       = a[0] + 1d.
++ Phần tử thứ 3: a[0] + d + d     = a[0] + 2d.
++ Phần tử thứ 4: a[0] + d + d + d = a[0] + 3d.
+=> Nhìn cột thứ 2 ta nhận xét: phần tử thứ n là tổng của phần tử ban đầu (a[0]) với tích của thứ tự trước đó (n - 1) với công sai(d). Công thức tổng quát: a[n] = a[0] + (n - 1) . d.
+   Nhìn cột thứ 1 ta nhận xét: phần tử thứ n là tổng của phần tử trước (a[n - 1]) với công sai (d). Hệ thức truy hồi: a[0] = a[0].
+                                                                                                                      a[n] = a[n - 1] + d.
+3. Bài toán "tổng các phần tử của cấp số cộng".
+- Ta nhận thấy vì toàn bộ phần tử của cấp số cộng từ a[0] đến a[+ vô cực] đều được xác định nên ta hoàn toàn có công thức tính tổng các phần tử từ i đến j: 
+  Nửa số phần tử nhân với tổng của giá trị ban đầu và giá trị cuối : n / 2 x (a[i] + a[j]).
+# Cấp số nhân
+1. Khái niệm
+-Dãy số thứ nhất ta gọi là "cấp số nhân" và hằng số được nhắc đến là "công bội".
+
+
+
+                                           
