@@ -1,0 +1,56 @@
+CƠ BẢN VỀ C++
+1. Khởi tạo chương trình
+
+#include<bits/stdc++.h> // khai báo thư viện. Không có dòng này thì sẽ không dùng được các hàm cin, cout,..
+using namespace std;    // rút gắn khâu std, không có dòng này thì phải ghi std::cin, std::cout chứ không được ghi tắt. Điều này gây mất thời gian không cần thiết.
+int main() {            // tên hàm và kiểu dữ liệu hàm. Đây là hàm chính là thiết yếu phải có trong c++.
+...................     // nội dung code.
+return 0;               // return giá trị nào cũng được (phải là int vì ở trên khai báo int main()). Đây là câu lệnh kết thúc chương trình.
+}                       
+
+2. Kiểu dữ liệu
+- Số: int số nguyên nhỏ (tối đa 10^9).                                                8, 9, -1
+      long long số nguyên lớn hơn int.                                                10^15, 10^9 + 7
+      double số thập phân có 2, 3 chữ số sau dấu ,                                    3, 2
+      float số thập phân có nhiều chữ số sau dấu ,                                    3, 3333
+- Chữ: char kí tự.                                                                    a, b, h
+        string xâu kí tự.                                                             abcdef
+- Bool: bool trả về true/false.                                                       true
+- Auto: tự suy luận kiểu dữ liệu
+- Ngoài ra còn có nhiều kiểu dữ liêu nâng cao khác như pointer, map, vector,... 
+3. Biến
+- Khai báo biến: kiểu dữ liệu + tên                                                   int x; bool prime; char alphabet; string name; auto pair
+                 nên đặt tên biến có ý nghĩa để làm code rõ ràng hơn
+- Để gán hoặc thay đổi giá trị hay thao tác với biến nói chung, ta dùng các toán tử.
+4. Toán tử
+- Toán tử toán học: +, -, *, /, %.
+- Toán tử gán: =.
+- Toán tử so sánh: ==, !=.
+- Toán tử gán toán học: +=, -=, *=, /=, %=.
+5. Cấu trúc rẽ nhánh
+
+if(điều kiện 1) {      // nếu điều kiện 1 đúng thì xảy ra dòng lệnh .... ở dưới và ngưng xét đến điều kiện 2
+.....
+}                      // đóng lệnh if
+else if(điều kiện 2) { // nếu điều kiện 1 sai thì xét đến điều kiện 2. Nếu điều kiện 2 đúng thì thực hiện dòng lệnh .....  và ngưng xét đến else
+.....
+}                      // đóng lệnh else if
+else {                 // Nếu cả 2 điều kiện sai thì thực hiện dòng lệnh ..... 
+.....
+}                      // đóng lệnh else
+* Lưu ý: đây được gọi là cấu trúc rẽ nhánh vì cái này không xảy ra thì nó sẽ rẽ sang hướng khác (đi xuống) cho đến khi có điều kiện thỏa mãn hoặc cho đến hết (ko có điều kiện thỏa mãn).
+         Trong 1 khối lệnh rẽ nhánh, chỉ có nhiều nhất 1 cái được thực hiện (hoặc không cái nào).
+         1 khối lệnh rẽ nhánh có thể chỉ có if, chỉ có if và if else, chỉ có if và else và có thể có nhiều else if.
+6. Vòng lặp
+- Vòng lặp for và while
+while (điều kiện) {                               // cách hoạt động while chỉ khác if ở sự lặp đi lặp lại. Chương trình sẽ thực hiện code ..... cho đến khi điều kiện không còn đúng.
+....
+}
+for(biến = value; điều kiện; gán giá trị biến) {  // Tương tự giống while nhưng gọn hơn.
+....
+}
+- Vòng lặp lồng nhau.
+- Đệ quy là một hàm tự gọi chính nó tạo thành các vòng lặp theo hệ thức truy hồi.
+
+         
+         
