@@ -1,0 +1,24 @@
+SỐ HỌC
+# Uớc và bội.
+-Uớc của 1 số n là số nguyên n' thỏa mãn n chia hết cho n'   => n' <= n.
+                                                                Mọi số nguyên n đều có ít nhất 2 ước là 1 và n. => 1 số có 1 ước (số 1) hoặc 2 ước là SỐ NGUYÊN TỐ.
+                                                                                                                   1 số có hơn 2 ước là HỢP SỐ.
+                                                                Tập hợp ước từ 1 đến n là các toàn bộ các ước dương của n.
+-Bội của 1 số n là số nguyên n'' thỏa mãn n'' chia hết cho n => n'' > = n.
+                                                                Mọi số nguyên n đều có vô số bội: n, 2n, 3n, 4n,...
+                                                                Tập hợp bội của n là các vô số bội của n.
+-Uớc chung lớn nhất của 2 số a, b là số nguyên dương lớn nhất vừa nằm trong tập hợp ước của a vừa năm trong tập hợp ước của b. Có kí hiệu là gcd(a, b).
+-Bội chung nhỏ nhất của 2 số a, b là số nguyên dương lớn nhất vừa nằm trong tập hợp bội của a vừa năm trong tập hợp bội của b. Có kí hiệu lcm(a, b).
+# Phép tính modulo.
+# Phép tính a ^ b.
+# Phép toán bit.
+- Bit là 1 xâu kí tự gồm 0 và 1. Một dãy bit được đánh số bắt đầu từ 0 theo chiều phải qua trái. Ví dụ bit 000100 Có thứ tự tương ứng là 5, 4, 3, 2, 1, 0
+                                 Ta đọc từ phải qua trái, nếu là 0 thì bỏ qua (cộng 0) , nếu là 1 thì cộng 2^n vào kết quả. Tổng cuối cùng chính là giá trị của bit. Ví dụ 000100 có giá trị là 0 + 0 + 2^2 + 0 + 0 + 0 = 4.
+                                 Ta có thể rút gọn 000100 = 00100 = 0100 = 100 vì các giá trị đằng sau số 1 đều bằng 0 . Tuy nhiên không thể loại bỏ 2 số 0 đằng trước vì nó ảnh hưởng đến giá trị bit.
+- Một số ví dụ tính bit: 1011 = 2^0 + 2^1 + 0 + 2^3 = 1 + 2 + 0 + 8 = 11
+                         1110 = 0 + 2^1 + 2^2 + 2^3 = 0 + 2 + 4 + 8  = 14.
+=> Mọi số tự nhiên đều có thể biểu diễn được dưới dạng bit.
+                                                                
+
+                                                                
+                                                                
