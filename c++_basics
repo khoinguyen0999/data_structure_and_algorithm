@@ -42,15 +42,20 @@ else {                 // Nếu cả 2 điều kiện sai thì thực hiện dò
          Trong 1 khối lệnh rẽ nhánh, chỉ có nhiều nhất 1 cái được thực hiện (hoặc không cái nào).
          1 khối lệnh rẽ nhánh có thể chỉ có if, chỉ có if và if else, chỉ có if và else và có thể có nhiều else if.
 6. Vòng lặp
-- Vòng lặp for và while
+- Vòng lặp: dùng để thực hiện các dòng lệnh cho đến khi điều kiện sai. Để tạo ra vòng lặp, ta có while, loop, đệ quy (recursion).
+- While: chỉ khác if ở việc lặp đi lặp lại (vòng lặp). Trong đó biến trong điều kiện phải được cập nhật, nếu không sẽ gây ra vòng lặp vô hạn (infitnite loop) gây lỗi.
 while (điều kiện) {                               // cách hoạt động while chỉ khác if ở sự lặp đi lặp lại. Chương trình sẽ thực hiện code ..... cho đến khi điều kiện không còn đúng.
 ....
-}
-for(biến = value; điều kiện; gán giá trị biến) {  // Tương tự giống while nhưng gọn hơn.
+}                                                 // đóng vòng lặp.
+- For: Giống while nhưng gộp phần update vào for cho gọn.
+for(khởi tạo giá trị biến; điều kiện; cập nhật giá trị biến) {  // Tương tự giống while nhưng gọn hơn.
 ....
-}
+=> Vòng lặp có ứng dụng chủ yếu: đặt giới hạn lần theo ý muốn cho dòng lệnh (lặp theo số lần biết trước).   in ra n chữ no, đếm số chữ số của 1 số.
+                                 tính toán bằng biến được khởi tạo.                                         tính giai thừa số n, tính tổng từ 1 đến n, in ra các số chẵn từ 1 đến n, tìm x^2 nhỏ nhất lớn hơn n.
+                                 duyệt mảng
 - Vòng lặp lồng nhau.
 - Đệ quy là một hàm tự gọi chính nó tạo thành các vòng lặp theo hệ thức truy hồi.
+
 
          
          
