@@ -1,3 +1,5 @@
+PROBLEM SET
+# actual test (mixed)
 https://oj.clue.edu.vn/problem/ptnk_ts10_25_a                 # greedy
 https://oj.clue.edu.vn/problem/dhh_ts10_25_a                  # math
 https://oj.clue.edu.vn/problem/bl_ts10_25_a                   # adhoc
@@ -7,6 +9,8 @@ https://oj.clue.edu.vn/problem/bl_ts10_25_d                   # adhoc
 https://oj.clue.edu.vn/problem/khtn_thithuts10_25_rect        # math_geometry
 https://oj.clue.edu.vn/problem/khtn_thithuts10_25_ones        # data_structure_string
 https://cses.fi/problemset/task/1083                          # greedy
+
+# introductory
 https://cses.fi/problemset/task/1069                          # adhoc
 https://cses.fi/problemset/task/1094                          # adhoc
 https://cses.fi/problemset/task/1071                          # adhoc
@@ -15,6 +19,11 @@ https://cses.fi/problemset/task/1618                          # data_structure_s
 https://cses.fi/problemset/task/1754                          # adhoc
 https://cses.fi/problemset/task/2205                          # math
 https://cses.fi/problemset/task/2165                          # recursion
+
+# math
+# data structure
+# palindrome
+# basic dp
 
 
 
