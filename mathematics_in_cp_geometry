@@ -1,0 +1,38 @@
+HỆ TRỤC TỌA ĐỘ 2 CHIỀU
+# Các tọa độ trên hệ trục tọa độ 2 chiều
+
+- Một điểm A có vị trí được xác định tại điểm a trên trục hoành (trục x) và điểm b trên trục tung (trục y) có tọa độ A (a, b).
+=> Từ đó ta có một số vị trí có tọa độ đặc biệt: gốc tọa độ O(0, 0)
+                                                 điểm A nằm trên trục hoành thì tung độ bằng 0 => A(a, 0)
+                                                 điểm B nằm trên trục tung thì hoành độ bằng 0 => B(0, b)
+                                                 
+# Một số ứng dụng
+
+1. Cho 2 điểm G(1, 2) và G'(4, 4) trên hệ tọa độ biết 2 điểm đó là 2 đầu mút (đỉnh) của 1 đường chéo trong hình chữ nhật ABCD.
+a) Tìm điều kiện tồn tại 2 điểm đó.
+b) Tìm tọa độ 2 đầu mút của đường chéo còn lại.
+c) Tìm tọa độ 4 đỉnh của hình chữ nhất ABCD.
+d) Đưa ra công thức tổng quát tìm tọa độ 4 đỉnh ABCD với G(x1, y1) và G'(x2, y2).
+
+2. Bạn An đi trên con đường hình vuông có cạnh 20 (m) ngược chiều kim đồng hồ.
+a) sau khi đi được 5 (m), 25(m), 36(m), 75(m) bạn đang ở khúc thứ mấy trong chu trình.
+b) Đưa ra công thức tổng quát truy vấn khúc bạn An đang đứng sau khi đi được x (m).
+
+# Một số công thức quan trọng 1
+
+- Cho 2 điểm A (x1, y1) và B(x2, y2) thì độ dài đoạn AB = sqrt(x1 * x1 + x2 * y2).
+- Cho tam giác ABC có 3 cạnh a, b, c và nửa chi vi p = (a + b + c) / 2 thì diện tích tam giác ABC = sqrt(p *  (p - a) * (p - b) * (p - c)).
+
+# Khái niệm quan trọng
+
+- Diện tích: phần không gian mà một MẶT PHẲNG chiếm. (không gian 2 chiều)
+- Thể tích: phần không gian mà một VẬT THỂ chiếm. (không gian 3 chiều)
+- Chu vi: độ dài viền của một mặt phẳng.
+
+# Một số công thức quan trọng 2
+
+- Các công thức cơ bản: Diện tích hình chữ nhật có 2 chỉ số độ dài a, b là ab. 
+                                  Diện tích tam giác là 1/2 * h * cạnh vuông góc h.
+                                  Chu vi của một đa giác là tổng độ dài các cạnh của đa giác đó.
+=> Từ đó ta có thể dễ dàng chứng minh công thức diện tích và chi vi các đa giác đặc biệt khác.
+                                  
