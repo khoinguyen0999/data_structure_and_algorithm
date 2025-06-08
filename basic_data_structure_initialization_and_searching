@@ -1,0 +1,46 @@
+CẤU TRÚC DỮ LIỆU CƠ BẢN VÀ THUẬT TOÁN DUYỆT
+# Vector
+1. Khái niệm
+- Vector là một kiểu dữ liệu cho phép dữ liệu được lưu trữ theo danh sách (mảng)
+- Thứ tự của các phần tử trong vector có n phần tử được đánh số từ 0 đến n - 1
+2. Khởi tạo
+- Cơ bản vector được khởi tạo bằng câu lệnh vector<kiểu dữ liệu>tên => 1 vector chỉ được 1 kiểu dữ liệu: vector<string>s, vector<char>c
+                                                                                                         vector<pair<int, char> >i_c, vector<vector<int> >2d_array
+- Tuy nhiên, đó chỉ là cách khởi tạo vector rỗng không xác định (không biết có mấy phần tử, không biểu các phần tử có giá trị bao nhiêu)
+=> Để khởi tạo vector a có chính xác n phần tử thì ta chỉ cần vector<int>a(n). Còn nếu muốn các phần tử đó có giá trị là 0 thì ta khai báo vector<int>a(n, 0)
+3. Các thao tác cơ bản và duyệt
+-Cho vector<int>a ta có:
+ a.push_back(7);                // thêm 7 vào a
+ cout << a.size();              // mới thêm 7 nên a có 1 phần tử
+ cout << a[0]                   // phần tử thứ 1 của a là 7
+ a.pop_back(7)                  // bỏ 7 ra thì a rỗng
+ cout << a.size();              // vì a rỗng nên a có 0 phần tử
+-Cho vector<int>a(3, 1) ta có:
+ a[0] -= 7;                     // thay đổi giá trị a[0] = -6
+ cout << a[3]                   // gây ra lỗi vì a chỉ có 3 phần tử
+ int n = a[1] + a[2]            // khai báo int n có giá trị là tổng phần tử thứ 2 và 3 của a = 2
+ sort(a.begin(), a,end());      // sắp xếp các phần tử a theo thứ tự tăng dần
+ for(int i = 0; i < n; i++) {   // in ra tất cả các phần tử của a: -6, 1, 1.
+ cout << a[i]
+ }
+ sort(
+4. Ứng dụng
+- Vector được dùng để: lưu trữ hiệu quả và linh hoạt kiểu dữ liệu danh sách, thuật tiện cho việc duyệt
+                       là nền tảng các thuật toán như prefix sum,...
+=> Đây là kiểu dữ liệu mạnh mẽ và phổ biến nhất
+# Pair
+- Pair là kiểu dữ liệu lưu trữ 1 cặp dữ liệu (có thể khác kiểu dữ liệu) một cách hiệu quả
+- Khai báo mẫu: auto a = {1, 3} => a.first = 1
+                                   b.first = 3
+=> Nói cách khác, pair giúp ta gôm các cặp dữ liệu lại thành 1 tên duy nhất.
+# String
+1. Các thao tác và hàm quan trọng
+- Cho string s; ta có:
++ s.length() độ dài s
++ s[i] truy cập phần tử thứ i + 1 của s
++ s.substr(i, length) lấy phần tử từ i + 1 đến i + length + 1
++ stoi(s) biến s thành số.
++ to_string(90) biến số thành xâu
+2. Ứng dụng
+- String có ứng dụng mạnh mẽ trong các bài toán mà: số được lưu trữ dưới dạng string sẽ tiện hơn
+                                                    liên quan đến xâu kí tự
